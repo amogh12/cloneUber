@@ -65,6 +65,7 @@ public class DriverLoginActivity extends AppCompatActivity {
                             String user_id = mAuth.getCurrentUser().getUid();
                             DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(user_id).child("name");
                             current_user_db.setValue(email);
+                            System.out.println("SAving driver to the db");
                         }
                     }
                 });

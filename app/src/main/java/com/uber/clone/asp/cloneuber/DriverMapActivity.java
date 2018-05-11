@@ -140,11 +140,14 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
     }
 
+    final int LOCATION_REQUEST_CODE = 1;
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
-
+            case LOCATION_REQUEST_CODE: {
+                break;
+            }
         }
     }
 
